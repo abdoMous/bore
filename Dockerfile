@@ -7,4 +7,4 @@ RUN cargo install --path .
 FROM scratch
 COPY --from=builder /usr/local/cargo/bin/bore .
 USER 1000:1000
-ENTRYPOINT ["./bore server"]
+#ENTRYPOINT ["./bore server"]
